@@ -10,9 +10,11 @@ function Navbar() {
   const [login, setLogin] = useState(false);
   function handleLogin() {
     setLogin((prevValue) => !prevValue);
+    document.body.classList.add("no-scroll");
   }
   const ifShowAuthForm = () => {
     setLogin(!login);
+    document.body.classList.remove("no-scroll");
   };
 
   return (

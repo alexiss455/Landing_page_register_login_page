@@ -27,6 +27,8 @@ body {
 .left {
   left: calc(50% - 1.9rem);
 }
-
+.no-scroll{
+  overflow: hidden;
+}
 
 

@@ -14,13 +14,13 @@ function Section3() {
         <div className="w-[90%] h-[5px] max-lg:h-full max-lg:w-[5px] max-lg:left-1/2 max-lg:top-0 max-lg:flex bg-cyan-500 absolute left-12 top-32"></div>
         <div className="flex flex-row gap-6 max-lg:flex-col duration-300 ">
           {sec.map((item, index) => (
-            <div key={index} className={` ${item.className} bg-white px-6 py-3 rounded-xl relative w-full shadow-xl`}>
+            <div key={index} className={` ${item.className} bg-white px-6 py-3 rounded-xl relative w-full shadow-xl `}>
               <div className="w-16 h-16 bg-purple-900 rounded-full flex items-center justify-center absolute -top-8 left lg:left-8 ">
                 {item.icons}
               </div>
               <div className="mt-12">
                 <h1 className="text-xl font-bold mb-4 ">{item.title}</h1>
-                <p className=" text-gray-500 whitespace-normal"> {item.content}</p>
+                <p className=" text-gray-500 whitespace-normal after:w-full after:h-full after:absolute after:top-0 after:left-0 hover:text-purple-950"> {item.content}</p>
               </div>
             </div>
           ))}
